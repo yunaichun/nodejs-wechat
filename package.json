@@ -1,35 +1,26 @@
 {
-  "name": "nodejs",
-  "version": "0.0.1",
-  "description": "movie",
+  "name": "wechat",
+  "version": "1.0.0",
+  "description": "微信公众号开发",
   "main": "app.js",
   "dependencies": {
-    "bcryptjs": "^2.3.0",
-    "body-parser": "^1.15.2",
-    "connect-mongo": "^1.3.2",
-    "connect-multiparty": "^2.0.0",
-    "cookie-parser": "^1.4.3",
+    "bluebird": "^3.4.6",
+    "crypto": "^0.0.3",
+    "ejs": "^2.5.2",
     "express": "^4.14.0",
-    "express-session": "^1.14.1",
-    "grunt-mocha-test": "^0.13.2",
-    "jade": "^1.11.0",
-    "moment": "^2.15.0",
-    "mongoose": "^4.6.0",
-    "morgan": "^1.7.0",
-    "should": "^11.1.0",
-    "underscore": "^1.8.3"
+    "heredoc": "^1.3.1",
+    "koa": "^1.2.4",
+    "lodash": "^4.16.6",
+    "raw-body": "^2.1.7",
+    "request": "^2.76.0",
+    "sha1": "^1.1.1",
+    "xml2js": "^0.4.17"
   },
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-mocha-test": "^0.13.2",
-    "grunt-nodemon": "^0.4.2",
-    "mocha": "^3.1.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "ncyu",
+  "author": "naichunyu",
   "license": "ISC"
 }
