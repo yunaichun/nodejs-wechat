@@ -14,22 +14,22 @@
 
 
 ## 需要安装以下模块
-1. koa
+- koa
 ```sh
 $ npm install koa
 ```
-2. Pomise
+- Pomise
 ```sh
 $ npm install bluebird
 ```
-3. wechat
+- wechat
 ```sh
 $ npm install sha1
 $ npm install crypto
 $ npm install request
 $ npm install lodash
 ```
-4. XML
+- XML
 ```sh
 $ npm install raw-body
 $ npm install xml2js
