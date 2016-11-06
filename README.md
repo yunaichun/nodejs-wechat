@@ -6,6 +6,7 @@
   - [接收消息](https://mp.weixin.qq.com/wiki/10/79502792eef98d6e0c6e1739da387346.html)
   - [回复消息](https://mp.weixin.qq.com/wiki/14/89b871b5466b19b3efa4ada8e577d45e.html)
 - [用户管理](https://mp.weixin.qq.com/wiki/0/56d992c605a97245eb7e617854b169fc.html)
+- [账号管理](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1443433542&token=&lang=zh_CN)
 - [自定义菜单](https://mp.weixin.qq.com/wiki/13/43de8269be54a0a6f64413e4dfa94f39.html)
 - [语义接口](https://mp.weixin.qq.com/wiki/0/0ce78b3c9524811fee34aba3e33f3448.html)
 - [JS-SDK](https://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html)
