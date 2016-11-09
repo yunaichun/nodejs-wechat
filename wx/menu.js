@@ -1,7 +1,11 @@
 'use strict'
 
 module.exports = {
-  'button': [{//一级菜单数组，个数应为1~3个
+  'button': [{
+    'name': '搜电影',
+    'type': 'view',
+    'url': 'http://ncyu.tunnel.qydev.com/movie'
+  },{//一级菜单数组，个数应为1~3个
     'name': '排行榜',//菜单标题，不超过16个字节，子菜单不超过40个字节
     'sub_button': [{//二级菜单数组，个数应为1~5个
       'name': '最热的',
@@ -23,9 +27,5 @@ module.exports = {
       'type': 'click',
       'key': 'movie_cartoon'
     }]
-  }, {
-    'name': '帮助',
-    'type': 'click',
-    'key': 'help'
   }]
 };

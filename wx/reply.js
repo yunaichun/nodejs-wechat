@@ -31,7 +31,7 @@ exports.reply=function* (next){
 				console.log('您不是扫描二维码关注的');
 			}
 			/*这是公众号发给用户的响应*/
-			this.body='哈哈，您订阅了这个号';
+			this.body='哈哈，您订阅了这个号，先点击搜电影试试看';
 		}
 		/*取消关注*/
 		else if (message.Event === 'unsubscribe') {
@@ -50,7 +50,8 @@ exports.reply=function* (next){
 	    }
 	    /*点击菜单链接*/
 	    else if (message.Event === 'VIEW'){
-	        this.body = '您点击了菜单中的链接:'+message.EventKey;
+	        // this.body = '您点击了菜单中的链接:'+message.EventKey;
+	        this.body = '';
 	    	console.log('您点击了菜单中的链接');
 	    }
 	    /*关注后扫描二维码*/
