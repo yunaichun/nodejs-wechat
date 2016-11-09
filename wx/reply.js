@@ -11,11 +11,11 @@ var menu=require('./menu');
 var path=require('path');
 
 //创建菜单
-// wechatApi.deleteMenu().then(function(){
-// 	wechatApi.createMenu(menu);
-// }).then(function(msg){
-// 	console.log('生成菜单',msg);
-// })
+wechatApi.deleteMenu().then(function(){
+	wechatApi.createMenu(menu);
+}).then(function(msg){
+	console.log('生成菜单',msg);
+})
 /*消息自动回复*/
 exports.reply=function* (next){
 	/*拿到微信消息：事件推送+普通消息【用户在干的事情】*/
