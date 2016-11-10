@@ -11,7 +11,7 @@ var menu=require('./menu');
 var path=require('path');
 //发送邮件
 var sendMail=require('../mail/sendMail');
-
+var sendMessage=require('../phone/sendMessage');
 //创建菜单
 wechatApi.deleteMenu().then(function(){
 	wechatApi.createMenu(menu);
@@ -32,7 +32,11 @@ exports.reply=function* (next){
 				subject:'subscribe',
 				html:message.FromUserName+'订阅了，具体XML消息：'+JSON.stringify(message)
 			};
-			sendMail(data);//主题+内容
+			sendMail(data);
+			var data2={"from":message.FromUserName.substr(0,6)};
+			sendMessage(JSON.stringify(data2));
+
+			
 			//扫码关注
 			if(message.EventKey){
 				console.log('扫二维码进来关注：' + message.EventKey + ' ' + message.Ticket);
@@ -50,8 +54,9 @@ exports.reply=function* (next){
 				subject:'unsubscribe',
 				html:message.FromUserName+'取消订阅了，具体XML消息：'+JSON.stringify(message)
 			};
-			sendMail(data);//主题+内容
-
+			sendMail(data);
+			var data2={"from":message.FromUserName.substr(0,6)};
+			sendMessage(JSON.stringify(data2));
 
 	        console.log('无情取消');
 	        this.body = '';

@@ -16,8 +16,8 @@ var wechat_ticket_file=path.join(__dirname,'./config/wechat_ticket.txt');
 var config={
 	wechat:{
 		/*//我的公众号
-		appID:'wxd6fe6fe1b1cb187a',
-		appSecret:'8fe004b024e597a7f9d359f6ed20c8dc ',*/
+		appID:'',
+		appSecret:'',*/
 		 
 		//测试公众号
 		appID:'wx6ad1b2adb57f14be',

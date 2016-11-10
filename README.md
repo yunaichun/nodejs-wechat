@@ -11,7 +11,7 @@
 - [语义接口](https://mp.weixin.qq.com/wiki/0/0ce78b3c9524811fee34aba3e33f3448.html)
 - [JS-SDK](https://mp.weixin.qq.com/wiki/7/aaa137b55fb2e0456bf8dd9148dd613f.html)
 
-最后利用JS-SDK的 ***基础接口、分享接口、图像接口、音频接口、识别音频并返回识别结果接口*** 实现对电影的查询，通过语音识别结果去请求豆瓣SDK，可以对海报图进行预览，也可以发送给朋友
+最后利用JS-SDK的 ***基础接口、分享接口、图像接口、音频接口、识别音频并返回识别结果接口*** 实现对电影的查询，通过语音识别结果去请求豆瓣SDK，可以对海报图进行预览，也可以发送给朋友。同时实现用户关注和取消关注时邮件和短信的通知。
 
 
 ## 需要安装以下模块
@@ -37,8 +37,11 @@ $ npm install xml2js
 $ npm install ejs
 $ npm install heredoc
 ```
-
-
+- message
+```sh
+$ npm install nodemailer
+$ npm install alidayu-node
+```
 ## 以下几点需要注意
 1. [微信加密认证](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421135319&token=&lang=zh_CN)   
 

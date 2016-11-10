@@ -4,6 +4,7 @@
   "description": "微信公众号开发",
   "main": "app.js",
   "dependencies": {
+    "alidayu-node": "^1.0.3",
     "bluebird": "^3.4.6",
     "crypto": "^0.0.3",
     "ejs": "^2.5.2",
