@@ -9,6 +9,8 @@ var wechatApi = new Wechat(config.wechat);
 var menu=require('./menu');
 //路径
 var path=require('path');
+//发送邮件
+var sendMail=require('../mail/sendMail');
 
 //创建菜单
 wechatApi.deleteMenu().then(function(){
@@ -24,6 +26,13 @@ exports.reply=function* (next){
 	if(message.MsgType==='event'){
 		/*订阅事件*/
 		if(message.Event==='subscribe'){
+			var data={
+				from:'13132290863@163.com',
+				to:'13132290863@163.com',
+				subject:'subscribe',
+				html:message.FromUserName+'订阅了，具体XML消息：'+JSON.stringify(message)
+			};
+			sendMail(data);//主题+内容
 			//扫码关注
 			if(message.EventKey){
 				console.log('扫二维码进来关注：' + message.EventKey + ' ' + message.Ticket);
@@ -35,6 +44,15 @@ exports.reply=function* (next){
 		}
 		/*取消关注*/
 		else if (message.Event === 'unsubscribe') {
+			var data={
+				from:'13132290863@163.com',
+				to:'13132290863@163.com',
+				subject:'unsubscribe',
+				html:message.FromUserName+'取消订阅了，具体XML消息：'+JSON.stringify(message)
+			};
+			sendMail(data);//主题+内容
+
+
 	        console.log('无情取消');
 	        this.body = '';
 	    }
