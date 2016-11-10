@@ -33,8 +33,8 @@ exports.reply=function* (next){
 				html:message.FromUserName+'订阅了，具体XML消息：'+JSON.stringify(message)
 			};
 			sendMail(data);
-			var data2={"from":message.FromUserName.substr(0,6)};
-			sendMessage(JSON.stringify(data2));
+			// var data2={"from":message.FromUserName.substr(0,6)};
+			// sendMessage(JSON.stringify(data2));
 
 			
 			//扫码关注

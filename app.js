@@ -330,5 +330,5 @@ app.use(function *(next){
 //koa框架调用主逻辑模块:传入获取access_token方法,微信回复方法
 app.use(wechat(config.wechat,reply.reply));
 //监听1234端口
-app.listen(80);
-console.log('Listen:80');
+app.listen(3001);
+console.log('Listen:3001');
